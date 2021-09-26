@@ -21,6 +21,16 @@ public class MainActivity2 extends AppCompatActivity {
         int box2 = Integer.parseInt(intent.getStringExtra("box2"));
         String operation = intent.getStringExtra("operation");
 
+        if(operation.equals("add")){
+            textView2.setText(box1 + box2);
+        }else if(operation.equals("sub")){
+            textView2.setText(box1 - box2);
+        }else if(operation.equals("mult")) {
+            textView2.setText(box1 * box2);
+        }else if(operation.equals("sub")) {
+            textView2.setText(box1 / box2);
+        }
+
 
     }
 }
