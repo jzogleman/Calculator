@@ -22,13 +22,17 @@ public class MainActivity2 extends AppCompatActivity {
         String operation = intent.getStringExtra("operation");
 
         if(operation.equals("add")){
-            textView2.setText(box1 + box2);
+            String newText = Integer.toString(box1+box2);
+            textView2.setText(newText);
         }else if(operation.equals("sub")){
-            textView2.setText(box1 - box2);
+            String newText = Integer.toString(box1-box2);
+            textView2.setText(newText);
         }else if(operation.equals("mult")) {
-            textView2.setText(box1 * box2);
-        }else if(operation.equals("sub")) {
-            textView2.setText(box1 / box2);
+            String newText = Integer.toString(box1*box2);
+            textView2.setText(newText);
+        }else if(operation.equals("div")) {
+            String newText = Integer.toString(box1/box2);
+            textView2.setText(newText);
         }
 
 

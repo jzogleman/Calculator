@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         EditText firstNumberText = (EditText) findViewById(R.id.firstNumberText);
         EditText secondNumberText = (EditText) findViewById(R.id.secondNumberText);
 
-        int box1 = Integer.parseInt(firstNumberText.getText().toString());
-        int box2 = Integer.parseInt(secondNumberText.getText().toString());
+        String box1 = firstNumberText.getText().toString();
+        String box2 = secondNumberText.getText().toString();
 
         gotToActivity("add", box1, box2);
     }
@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
         EditText firstNumberText = (EditText) findViewById(R.id.firstNumberText);
         EditText secondNumberText = (EditText) findViewById(R.id.secondNumberText);
 
-        int box1 = Integer.parseInt(firstNumberText.getText().toString());
-        int box2 = Integer.parseInt(secondNumberText.getText().toString());
+        String box1 = firstNumberText.getText().toString();
+        String box2 = secondNumberText.getText().toString();
 
         gotToActivity("sub", box1, box2);
     }
@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
         EditText firstNumberText = (EditText) findViewById(R.id.firstNumberText);
         EditText secondNumberText = (EditText) findViewById(R.id.secondNumberText);
 
-        int box1 = Integer.parseInt(firstNumberText.getText().toString());
-        int box2 = Integer.parseInt(secondNumberText.getText().toString());
+        String box1 = firstNumberText.getText().toString();
+        String box2 = secondNumberText.getText().toString();
 
         gotToActivity("mult", box1, box2);
     }
@@ -49,13 +49,13 @@ public class MainActivity extends AppCompatActivity {
         EditText firstNumberText = (EditText) findViewById(R.id.firstNumberText);
         EditText secondNumberText = (EditText) findViewById(R.id.secondNumberText);
 
-        int box1 = Integer.parseInt(firstNumberText.getText().toString());
-        int box2 = Integer.parseInt(secondNumberText.getText().toString());
+        String box1 = firstNumberText.getText().toString();
+        String box2 = secondNumberText.getText().toString();
 
         gotToActivity("div", box1, box2);
     }
 
-    public void gotToActivity(String operation, int box1, int box2){
+    public void gotToActivity(String operation, String box1, String box2){
 
         Intent intent = new Intent(this, MainActivity2.class);
         intent.putExtra("operation", operation);
